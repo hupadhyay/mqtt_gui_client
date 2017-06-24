@@ -124,6 +124,8 @@ public class Main extends Application {
 		primaryStage.setHeight(360);
 		primaryStage.setWidth(570);
 		primaryStage.show();
+		
+		primaryStage.setOnCloseRequest(we -> System.exit(0));
 	}
 
 	private Scene createFxScene() {
